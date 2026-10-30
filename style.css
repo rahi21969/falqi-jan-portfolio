@@ -10,7 +10,9 @@
   --muted: #6e5349;
   --border: rgba(133, 90, 75, 0.12);
   --shadow: 0 20px 45px rgba(90, 55, 42, 0.12);
-  /* Style for the gallery section holding your images */
+}
+
+/* Style for the gallery section holding your images */
 .image-gallery {
   display: flex;
   flex-wrap: wrap;
@@ -26,7 +28,6 @@
   height: 280px;      /* Sets a uniform height */
   object-fit: cover;  /* Prevents images from stretching or distorting */
   border-radius: 8px; /* Optional: gives your photos smooth rounded corners */
-}
 }
 
 * {
