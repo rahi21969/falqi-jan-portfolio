@@ -586,3 +586,45 @@ body {
 .site-header {
   background: rgba(255, 245, 242, 0.9);
 }
+body {
+  background:
+    radial-gradient(circle at top left, rgba(233, 154, 72, 0.28), transparent 30%),
+    radial-gradient(circle at bottom right, rgba(116, 48, 22, 0.22), transparent 34%),
+    linear-gradient(180deg, #f8dfb8 0%, #e8a45d 55%, #8b421f 100%);
+}
+
+.hero {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 235, 196, 0.9),
+    rgba(204, 103, 47, 0.78)
+  );
+}
+
+.falling-leaves {
+  position: fixed;
+  inset: 0;
+  z-index: 20;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.falling-leaves span {
+  position: absolute;
+  top: -80px;
+  left: var(--left);
+  font-size: 2rem;
+  opacity: 0.8;
+  animation: fall var(--duration) linear infinite;
+  animation-delay: var(--delay);
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(-80px) rotate(0deg);
+  }
+
+  100% {
+    transform: translateY(110vh) translateX(120px) rotate(720deg);
+  }
+}
