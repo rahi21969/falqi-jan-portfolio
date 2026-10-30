@@ -575,3 +575,14 @@ body {
 .page-glow-two {
   background: rgba(190, 143, 129, 0.1);
 }
+body {
+  background: #dcb5ad;
+}
+
+.hero {
+  background: linear-gradient(135deg, #efd0c9 0%, #c98e82 100%);
+}
+
+.site-header {
+  background: rgba(255, 245, 242, 0.9);
+}
