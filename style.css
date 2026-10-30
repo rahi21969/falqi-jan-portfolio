@@ -628,3 +628,32 @@ body {
     transform: translateY(110vh) translateX(120px) rotate(720deg);
   }
 }
+.falling-leaves {
+  position: fixed !important;
+  inset: 0 !important;
+  z-index: 9999 !important;
+  display: block !important;
+  pointer-events: none !important;
+  overflow: hidden !important;
+}
+
+.falling-leaves span {
+  position: absolute !important;
+  top: -60px !important;
+  left: var(--left) !important;
+  display: block !important;
+  font-size: 2.2rem !important;
+  opacity: 1 !important;
+  animation: fall var(--duration) linear infinite !important;
+  animation-delay: var(--delay) !important;
+}
+
+@keyframes fall {
+  from {
+    transform: translateY(-80px) rotate(0deg);
+  }
+
+  to {
+    transform: translateY(110vh) translateX(140px) rotate(720deg);
+  }
+}
