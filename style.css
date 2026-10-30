@@ -698,3 +698,7 @@ body {
   background: #efbd7f !important;
   border-top-color: #b76536 !important;
 }
+.site-header {
+  background: #efbd7f !important;
+  border-bottom-color: #b76536 !important;
+}
